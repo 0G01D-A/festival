@@ -20,7 +20,7 @@ criei o dias.html e fez este codigo
 
     {% for concerto in dia.concertos.all %}
         <article class="card">
-            <a href="{% url 'concerto' concerto.id %}">{{ concerto.banda.nome }} - {{ concerto.dia }}, {{ concerto.hora }}</a>
+            <a href="{% url 'concerto' concerto.id %}">{{ concerto.banda.nome }} - {{ concerto.dia }}, {{ concerto.palco }}</a>
         </article>
     {% endfor %}
 
